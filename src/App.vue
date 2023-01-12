@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+ <Singupform/>
 </template>
 
 <script lang="ts">
+import Singupform from './components/Singupform.vue'
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+
 
 @Options({
-  components: {
-    HelloWorld,
+  components: { Singupform
+    
   },
 })
 export default class App extends Vue {}
@@ -24,4 +24,9 @@ export default class App extends Vue {}
   color: #2c3e50;
   margin-top: 60px;
 }
+body{
+  margin: 0;
+  background: #eee;
+}
+
 </style>
